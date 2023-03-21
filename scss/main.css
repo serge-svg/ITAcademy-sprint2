@@ -82,22 +82,12 @@ nav {
   width: 100%;
 }
 
-#navbarNav {
-  display: flex;
-  gap: 2.5vh;
-}
-
-.navbar-nav {
-  display: flex;
-  gap: 2.5vh;
-}
-
-.nav-link-top {
+.nav-link {
   color: gray;
   text-decoration: none;
 }
 
-.nav-link-top:hover {
+.nav-link:hover {
   color: rgb(66, 64, 64);
   background-color: transparent;
   text-decoration: none;
@@ -156,20 +146,22 @@ main {
   padding: 5vh 30% 5vh 30%;
 }
 
+/*
 .nav-link:hover {
-  border-bottom: 4px solid gray;
-  text-decoration: none;
+    border-bottom: 4px solid gray;
+    text-decoration: none;
 }
 
 .nav-link:hover::after {
-  opacity: 1;
+    opacity: 1;
+    text-decoration: none;
 }
 
-.navbar-nav > li {
-  float: left;
-  position: relative;
+.navbar-nav>li {
+    float: right;
+    position: relative;
 }
-
+*/
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
