@@ -99,21 +99,19 @@ main {
     text-align: center;
     padding: 5vh 30% 5vh 30%;
 }
-/*
-.nav-link:hover {
-    border-bottom: 4px solid gray;
-    text-decoration: none;
+
+.feature-tabs .nav-link {
+    transition: all 0.2s;
+    border-bottom: 2px solid rgb(197, 195, 195);
 }
 
-.nav-link:hover::after {
+.feature-tabs .nav-link:hover {
+    border-bottom: 3px solid rgb(230, 153, 90);
+}
+
+.feature-tabs .nav-link:hover::after {
     opacity: 1;
-    text-decoration: none;
 }
 
-.navbar-nav>li {
-    float: right;
-    position: relative;
-}
-*/
 
 @import "../node_modules/bootstrap/scss/bootstrap";
