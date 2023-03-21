@@ -122,6 +122,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
 
 .contactus form input { 
     width: 30%;
+    max-width: 400px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
