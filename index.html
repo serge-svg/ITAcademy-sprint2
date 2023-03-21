@@ -15,51 +15,63 @@
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <img class="header-logo" src="Imagenes/logo-bookmark.svg" alt="bookmark logo">
+        <img class="bookmark-logo" src="Imagenes/logo-bookmark.svg" alt="bookmark logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav d-flex align-items-end">
             <li class="nav-item">
-              <a class="nav-link-top" aria-current="page" href="#">Features</a>
+              <a class="nav-link fw-bold" aria-current="page" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link-top" href="#">Pricing</a>
+              <a class="nav-link fw-bold" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link-top" href="#">Contact</a>
+              <a class="nav-link fw-bold" href="#">Contact</a>
+            </li>
+            <li>
+              <button class="btn btn-primary">Login</button>
             </li>
           </ul>
-          <button class="btn btn-primary">Login</button>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="container-fluid">
-    <div class="main-left bd-highlight">
-      <h1>
-        A Simple Bookmark Manager
-      </h1>
-      <p class="body-regular">A clean and simple interface to organize your favourite websites. Open a new browser tab
-        and see your sites load instantly. Try it for free.</p>
-      <div class="main-buttons">
-        <button class="btn btn-primary btn-lg" tabindex="2">Get it on Chrome</button>
-        <button class="btn btn-secondary btn-lg" tabindex="3">Get it on Firefox</button>
+  <main class="container-md">
+    <div class="row mt-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-4 mx-2 mt-5 ms-5">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites.
+          Open a new browser tab and see your sites load instantly. Try it
+          for free
+        </p>
+        <div class="main-buttons mb-5">
+          <button type="button" class="btn btn-primary text-nowrap">
+            Get it on Chrome
+          </button>
+          <button type="button" class="btn bg-light text-nowrap">
+            Get it on Firefox
+          </button>
+        </div>
       </div>
+
+      <div class="col-md-4">
+        <img class="img-fluid d-block" src="/Imagenes/illustration-hero.svg" alt="image" />
+      </div>
+      <div class="col-md-2"></div>
     </div>
 
-    <div class="main-right d-none d-lg-block">
-      <img class="main-image" src="Imagenes/illustration-hero.svg" alt="main image">
-    </div>
   </main>
 
-  <section class="features">
+  <section class="features my-5">
     <div class="row text-center">
       <div class="col-12">
-        <h2>Features</h2>
+        <h2 class="fw-bold">Features</h2>
       </div>
     </div>
 
@@ -75,7 +87,7 @@
 
   <section class="feature-tabs">
     <ul class="nav justify-content-center mb-5">
-      <li class="nav-item ">
+      <li class="nav-item">
         <a id="bookmarking-tab" class="nav-link active fw-bold" data-bs-toggle="tab" data-bs-target="#bookmarking"
           aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</a>
       </li>
@@ -93,16 +105,23 @@
       <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
         <div class="container-fluid d-flex">
           <div class="row">
-            <div class="col-xl-2"></div>
-            <div class="col-xl-4 mb-5">
-              <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-1.svg" alt="image" />              
+            <div class="col-md-2"></div>
+
+            <div class="col-md-4">
+              <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-1.svg" alt="image" />
             </div>
-            <div class="col-xl-4 mx-auto">
-              <h3>Bookmark in one click</h3>
-              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
+
+            <div class="col-md-4 mt-4">
+              <h3 class="col-12 mx-auto text-center">Bookmark in one click</h3>
+              <p class="col-12 mx-auto text-center">Organize your bookmarks however you like. Our simple drag-and-drop
+                interface gives you complete control
                 over how you manage your favourite sites.</p>
-              <button type="button" class="btn btn-primary text-nowrap">More info</button>
+              <div class="col-12 mx-auto text-center">
+                <button class="btn btn-info" role="button">More Info</button>
+              </div>
             </div>
+
+            <div class="col-md-2"></div>
           </div>
         </div>
       </div>
@@ -111,16 +130,22 @@
         <div class="tab-pane fade show active" id="searching" role="tabpanel" aria-labelledby="searching-tab">
           <div class="container-fluid d-flex">
             <div class="row">
-              <div class="col-xl-2"></div>
-              <div class="col-xl-4 mb-5">
+              <div class="col-md-2"></div>
+              <div class="col-md-4">
                 <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-2.svg" alt="image" />
               </div>
-              <div class="col-xl-4 mx-auto">
-                <h3>Speedy Searching</h3>
-                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl
+
+              <div class="col-md-4 mt-4">
+                <h3 class="col-12 mx-auto text-center">Speedy Searching</h3>
+                <p class="col-12 mx-auto text-center">Our powerful search feature will help you find saved sites in no time at all. No need to trawl
                   through all iof your bookmarks.</p>
-                <button type="button" class="btn btn-primary text-nowrap">More info</button>
+                <div class="col-12 mx-auto text-center">
+                  <button class="btn btn-info" role="button">More Info</button>
+                </div>
               </div>
+
+              <div class="col-md-2"></div>
+
             </div>
           </div>
         </div>
@@ -130,16 +155,22 @@
         <div class="tab-pane fade show active" id="sharing" role="tabpanel" aria-labelledby="sharing-tab">
           <div class="container-fluid d-flex">
             <div class="row">
-              <div class="col-xl-2"></div>
-              <div class="col-xl-4 mb-5">
+              <div class="col-md-2"></div>
+
+              <div class="col-md-4">
                 <img class="img-fluid d-block mx-auto" src="/Imagenes/illustration-features-tab-3.svg" alt="image" />
               </div>
-              <div class="col-xl-4 mx-auto">
-                <h3>Easy Searching</h3>
-                <p>Easily share your bookmarks and collections with others. Create a shareable link that you send at the
+
+              <div class="col-md-4 mt-4">
+                <h3 class="col-12 mx-auto text-center">Easy Searching</h3>
+                <p class="col-12 mx-auto text-center">Easily share your bookmarks and collections with others. Create a shareable link that you send at the
                   click of a button</p>
-                <button type="button" class="btn btn-primary text-nowrap">More info</button>
-              </div>
+                  <div class="col-12 mx-auto text-center">
+                    <button class="btn btn-info" role="button">More Info</button>
+                  </div>
+                </div>
+
+              <div class="col-md-2"></div>
             </div>
           </div>
         </div>
@@ -152,8 +183,8 @@
   <div class="extension">
     <div class="row">
       <div class="col-12 col-sm-4 mx-auto mt-5 mb-5">
-        <h3>Download the extension</h3>
-        <p>
+        <h3 class="col-12 mx-auto text-center">Download the extension</h3>
+        <p class="col-12 mx-auto text-center">
           Our aim is to make it quick and easy for you to access your
           favourite websites. Your bookmarks sync between your devices so you
           can access them on the go.
@@ -173,7 +204,7 @@
             <p class="card-text text-center mb-2">Minimum version 62</p>
           </div>
           <img src="/Imagenes/bg-dots.svg" alt="dots">
-          <a href="#" class="btn btn-primary m-4 mx-auto" style="width: 70%;">Add & Install Extension</a>
+          <a href="#" class="btn btn-info m-4 mx-auto" style="width: 70%;">Add & Install Extension</a>
         </div>
       </div>
 
@@ -185,7 +216,7 @@
             <p class="card-text text-center mb-2">Minimum version 55</p>
           </div>
           <img src="/Imagenes/bg-dots.svg" alt="dots">
-          <a href="#" class="btn btn-primary m-4 mx-auto" style="width: 70%;">Add & Install Extension</a>
+          <a href="#" class="btn btn-info m-4 mx-auto" style="width: 70%;">Add & Install Extension</a>
         </div>
       </div>
 
@@ -197,7 +228,7 @@
             <p class="card-text text-center mb-2">Minimum version 55</p>
           </div>
           <img src="/Imagenes/bg-dots.svg" alt="dots">
-          <a href="#" class="btn btn-primary m-4 mx-auto" style="width: 70%;">Add & Install Extension</a>
+          <a href="#" class="btn btn-info m-4 mx-auto" style="width: 70%;">Add & Install Extension</a>
         </div>
       </div>
 
@@ -208,8 +239,8 @@
   <div class="Frequently Asked Questions">
     <div class="row justify-content-center mb-5">
       <div class="col-sm-4 mt-5 pt-5">
-        <h3>Frequently Asked Questions</h3>
-        <p>
+        <h3 class="col-12 mx-auto text-center">Frequently Asked Questions</h3>
+        <p class="col-12 mx-auto text-center">
           Our aim is to make it quick and easy for you to access your
           favourite websites. Your bookmarks sync between your devices so you
           can access them on the go.
@@ -224,49 +255,75 @@
         <div class="accordion accordion-flush" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What is Bookmark?
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <p>What is Bookmark?</p>
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 How can I request a new browser?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Is there a mobile app?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 What about other Chromium browsers?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -275,9 +332,44 @@
     </div>
   </div>
 
-  <div class="col-md-6 mx-auto text-center">
-    <a class="btn btn-info" role="button">More Info</a>
+  <div class="col-12 mx-auto text-center">
+    <button class="btn btn-info" role="button">More Info</button>
   </div>
+
+  <section class="contactus mt-5 py-5">
+    <h4 class="text-center py-3">35.000+ ALREADY JOINED</h4>
+    <h2 class="text-center py-3">Stay up-to-date with what we're doing</h2>
+    <form>
+      <input class="form-control" type="search" placeholder="Enter your email adress." aria-label="Search">
+      <button class="btn btn-danger text-white ms-4" type="submit">Contact Us</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="bookmark-logo" src="Imagenes/logo-bookmark-white.svg" alt="bookmark logo">
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <img src="Imagenes/icon-facebook.svg" alt="facebook logo">
+          <img src="Imagenes/icon-twitter.svg" alt="twitter logo">
+        </div>
+      </div>
+    </nav>
+  </footer>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
