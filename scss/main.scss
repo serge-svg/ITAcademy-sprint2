@@ -1,0 +1,122 @@
+@import 'components/texts';
+@import 'components/colors';
+@import 'components/buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-logo {
+    height: 20px;
+}
+
+
+header {
+    background-color: white;
+
+    width: 100%;
+    padding: 5vh 10vh 5vh 10vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+nav {
+    width: 100%;
+}
+
+#navbarNav {
+    display: flex;
+    gap: 2.5vh;
+}
+
+
+.nav-link-top {
+    color: gray;
+    text-decoration: none;
+}
+
+
+.nav-link-top:hover {
+    color: rgb(66, 64, 64);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.main-image {
+    width: auto;
+    height: 400px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 5vh 10vh 5vh 10vh;
+}
+
+.main-left,
+.main-right {
+    display: flex;
+    width: 50%;
+}
+
+.main-left {
+    flex-direction: column;
+    padding: 15vh;
+}
+
+.main-right {
+    justify-content: center;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vh;
+}
+
+.features-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 5vh 10vh 5vh 10vh;
+}
+
+.features-text h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-text p {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5vh 30% 5vh 30%;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid gray;
+    text-decoration: none;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.navbar-nav>li {
+    float: left;
+    position: relative;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
