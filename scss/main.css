@@ -75,14 +75,7 @@ header {
 
 footer {
   background-color: #14213d;
-}
-
-header,
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 100%;
+  color: white;
 }
 
 nav {
@@ -148,24 +141,6 @@ nav {
 
 .accordion-button :not(.collapsed) {
   color: rgb(30, 31, 30);
-}
-
-.contactus {
-  background-color: #5266df;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.contactus form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.contactus form input {
-  width: 30%;
-  max-width: 400px;
 }
 
 /*!

@@ -20,14 +20,7 @@ header {
 
 footer {
     background-color: $secondary;
-}
-
-header,
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    width: 100%;
+    color: white;
 }
 
 nav {
@@ -105,24 +98,5 @@ $accordion-icon-color: $info;
 $accordion-button-active-bg: none;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#{$accordion-icon-color}' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#{$accordion-icon-active-color}' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
-
-.contactus {
-    background-color: #5266df;  
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.contactus form {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;   
-}
-
-.contactus form input { 
-    width: 30%;
-    max-width: 400px;
-}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
