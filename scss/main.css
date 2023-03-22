@@ -75,14 +75,7 @@ header {
 
 footer {
   background-color: #14213d;
-}
-
-header,
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 100%;
+  color: white;
 }
 
 nav {
@@ -148,24 +141,6 @@ nav {
 
 .accordion-button :not(.collapsed) {
   color: rgb(30, 31, 30);
-}
-
-.contactus {
-  background-color: #5266df;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.contactus form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.contactus form input {
-  width: 30%;
-  max-width: 400px;
 }
 
 /*!
@@ -4647,7 +4622,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12'%3e%3cpath fill='none' stroke='%23fca311' stroke-width='3' d='M1 1l8 8 8-8'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12'%3e%3cpath fill='none' stroke='%235266df' stroke-width='3' d='M1 1l8 8 8-8'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
