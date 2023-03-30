@@ -109,7 +109,7 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  padding: 5vh 10vh 5vh 10vh;
+  padding: 2rem 4rem;
 }
 
 .features-text h2, .features-text .h2 {
@@ -121,7 +121,7 @@ nav {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding: 5vh 30% 5vh 30%;
+  padding: 3rem 4rem;
 }
 
 .feature-tabs .nav-link {
